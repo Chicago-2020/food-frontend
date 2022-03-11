@@ -16,7 +16,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 const httpLink = createHttpLink({
-  uri: '/https://dry-shelf-73793.herokuapp.com/graphql',
+  uri: 'https://dry-shelf-73793.herokuapp.com/graphql'
 });
 
 const authLink = setContext((_, { headers }) => {
