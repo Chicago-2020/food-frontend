@@ -15,7 +15,10 @@ import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+const url = process.env.NODE_ENV === 'development' 
+            ? '/graphql' : 'https://dry-shelf-73793.herokuapp.com/graphql';
 const httpLink = createHttpLink({
+  // uri: url
   uri: 'https://dry-shelf-73793.herokuapp.com/graphql'
 });
 
